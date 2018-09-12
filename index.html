@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>有道精品课</title>
+  <!--lib-->
+  <script src="//shared.ydstatic.com/js/zepto/1.1.6.js"></script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?dea58cde9b2c0f01a65947e0cc34dd2e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+<!--分享-->
+<script src="//shared.ydstatic.com/js/ydk/ydk-1.4.4-min.js"></script>
+<script>
+  ydk.config({
+    debug: false,
+    jsApiList: ['checkJsApi', 'share', 'downloadImage', 'uploadImage', 'previewImage', 'chooseImage']
+  });
+  ydk.share({
+    type: 'wechat',
+    title: '我当年居然做过这种高考题……',
+    desc: '真怀念高中的自己',
+//    imgUrl: location.origin + '/static/img/little-share.jpg',
+    imgUrl: 'http://shared.ydstatic.com/dict/market/wdgkt/static/img/little-share.jpg',
+    link: location.href,
+    shift: true,
+    success: function () {
+      $('.share-page').addClass('hidden').removeClass('visibility')
+    }
+  })
+</script>
+
+</html>

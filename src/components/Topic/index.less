@@ -1,0 +1,105 @@
+@import "../../styles/common.less";
+
+.topic {
+  .topic-detail {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6.04rem;
+  }
+  .qrcode {
+    width: 0.60rem;
+    height: 0.77rem;
+    position: absolute;
+    top: 4.40rem;
+    right: 0.7rem;
+  }
+  .comment {
+    width: 1.75rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 4.40rem;
+    left: 0.5rem;
+  }
+  .user-name {
+    font-weight: 600;
+    position: absolute;
+    top: 0.58rem;
+    left: 1.05rem;
+    text-align: center;
+    width: 0.8rem;
+    font-size: 0.2rem;
+  }
+  .preview-img {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6.04rem;
+    width: 100%;
+  }
+  .realImg {
+    width: 100%;
+    height: 6.04rem;
+  }
+  #target {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6.04rem;
+    background-size: cover;
+  }
+  .button {
+    position: absolute;
+    width: 1.29rem;
+    height: 0.38rem;
+    bottom: 0.12rem;
+  }
+  .save-button {
+    left: 0.40rem;
+    background: url("../../../static/img/save-img.png") no-repeat;
+    background-size: cover;
+  }
+  .goto-button {
+    right: 0.40rem;
+    background: url("../../../static/img/goto.png") no-repeat;
+    background-size: cover;
+  }
+  .loading-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6.04rem;
+    opacity: 0.6;
+    background: #000;
+    //background: rgba(0, 0, 0, 0.9);
+  }
+  .loading-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 2rem;
+      height: 1rem;
+      background: #eee;
+      border-radius: 0.05rem;
+      color: #666;
+      font-size: 0.18rem;
+      text-align: center;
+      line-height: 1rem;
+    }
+  }
+}

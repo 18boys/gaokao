@@ -1,0 +1,82 @@
+@import "../../styles/common.less";
+
+.home {
+  background: url("../../../static/img/home.png") no-repeat;
+  background-size: cover;
+  .home-text {
+    position: absolute;
+    top: 0.94rem;
+    height: 2.27rem;
+    left: 0.62rem;
+    right: 0.52rem;
+    background: url("../../../static/img/home-text.png") no-repeat;
+    background-size: cover;
+  }
+  .word-in-an {
+    animation: word-in 4s linear 1;
+  }
+  .notice-button {
+    display: none;
+    position: absolute;
+    bottom: 1.39rem;
+    left: 1rem;
+    right: 1rem;
+    height: 1.15rem;
+    animation: tada 1s linear infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    background: url("../../../static/img/notice-button.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes word-in {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  20% {
+    height: 0.5rem;
+    opacity: 1;
+  }
+  40% {
+    height: 1rem;
+    opacity: 1;
+  }
+  60% {
+    height: 1.5rem;
+    opacity: 1;
+  }
+  80% {
+    height: 2rem;
+    opacity: 1;
+  }
+  100% {
+    height: 2.27rem;
+    opacity: 1;
+  }
+}
+
+@keyframes tada {
+  0% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+  }
+  10%, 20% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  40%, 60%, 80% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+  }
+}
+
